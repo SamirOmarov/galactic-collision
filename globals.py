@@ -1,10 +1,16 @@
-# CONSTANTS
-from vpython import vector, color, sqrt, sphere, rate
+from vpython import vector, color, sqrt, sphere, rate, scene
 from math import fsum
 from random import gauss
 import numpy as np
+
+# CONSTANTS
+
+
 # Universal gravitational constant
 G = 6.673e-11
+
+scene.width = 1300
+scene.height = 650
 
 # Solar mass in kg (assume average stellar mass)
 SOLAR_MASS = 2.000e30
@@ -15,20 +21,20 @@ MAX_SOLAR_MASS = SOLAR_MASS * 250
 AVG_SOLAR_MASS = SOLAR_MASS * 3.0
 
 # Scale distances for galactic scales
-DIST_SCALE = 1e20
+DIST_SCALE = 1e20  # 1e20
 
 # Galactic parameters
 MAX_ORBITAL_RADIUS = DIST_SCALE * 10
 MIN_ORBITAL_RADIUS = DIST_SCALE * 0.15
 
 MILKY_WAY_GALAXY_THICKNESS = DIST_SCALE * 0.9
-ANDROMEDA_GALAXY_THICKNESS = DIST_SCALE * 0.1
+ANDROMEDA_GALAXY_THICKNESS = DIST_SCALE * 0.2
 
 
 # Milky Way contains about 300 billion stars
-NUM_STARS_MILKY_WAY = 1000
+NUM_STARS_MILKY_WAY = 700
 # Andromeda Galaxy contains about 1 trillion (10^12) stars
-NUM_STARS_ANDROMEDA = 1500
+NUM_STARS_ANDROMEDA = 1400
 
 # Graphical constants
 STAR_RADIUS = 0.025

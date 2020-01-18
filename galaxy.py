@@ -1,7 +1,6 @@
 from globals import *
 from star import Star
 
-# from vpython import vector, color, sqrt, sphere, rate
 
 class Galaxy(object):
     def __init__(self, num_stars, pos, vel, radius, thickness, color):
